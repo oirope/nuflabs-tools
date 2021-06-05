@@ -1,1 +1,1 @@
-export * as weapon from './weapon';
+export { Weapon, Weapons } from './weapon';
