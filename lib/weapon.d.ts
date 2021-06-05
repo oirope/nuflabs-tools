@@ -1,6 +1,6 @@
 import { IDMap } from './utils';
 
-export type Weapon = {
+export declare type Weapon = {
 	name: string;
 	damage: () => number;
 	block: () => number;
