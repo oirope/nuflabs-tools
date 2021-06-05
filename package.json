@@ -4,7 +4,6 @@
   "description": "A helper interface for the Dream Machine",
   "types": "lib/index.d.ts",
   "scripts": {
-    "test": "jest",
     "build": "tsc",
     "format": "prettier --write src/**/*"
   },
@@ -17,11 +16,8 @@
     "url": "https://github.com/oirope/nuflabs-tools/issues"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.23",
     "@types/node": "^15.6.1",
-    "jest": "^27.0.3",
     "prettier": "^2.3.0",
-    "ts-jest": "^27.0.2",
     "typescript": "^4.3.2"
   },
   "files": [
