@@ -1,10 +1,18 @@
-import { IDMap } from './utils';
+import { Named, IDMap, Randomizable } from './utils';
 
-export declare type Weapon = {
-	name: string;
-	damage: () => number;
-	block: () => number;
-	piercing: () => number;
+type WeaponTraits = {
+	damage: Randomizable;
+	block: Randomizable;
+	piercing?: Randomizable;
+	range?: number;
 };
+
+export type Modifier = Named & Partial<WeaponTraits>;
+
+export type Weapon = Named &
+	WeaponTraits & {
+		modifier?: Modifier;
+		modifiers: Modifier[];
+	};
 
 export type Weapons = IDMap<Weapon>;
