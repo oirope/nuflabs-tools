@@ -18,4 +18,4 @@ export type Weapon = WeaponType & {
 	modifier?: Modifier;
 };
 
-export type Weapons = IDMap<Weapon>;
+export type Weapons = IDMap<WeaponType>;
