@@ -9,10 +9,13 @@ type WeaponTraits = {
 
 export type Modifier = Named & Partial<WeaponTraits>;
 
-export type Weapon = Named &
+export type WeaponType = Named &
 	WeaponTraits & {
-		modifier?: Modifier;
-		modifiers: Modifier[];
+		modifiers?: Modifier[];
 	};
+
+export type Weapon = WeaponType & {
+	modifier?: Modifier;
+};
 
 export type Weapons = IDMap<Weapon>;
